@@ -1,29 +1,27 @@
 ### Revisão
 
-- yarn --init para criar um yarn lock e continuarmos comas intalações necessarias para poder construir uma api com Node.js.
+- yarn --init para criar um yarn lock e continuarmos com as intalações necessários para poder construir uma api com Node.js.
 
-- yarn add express para podermos fazer o servidor ajustavel, agora podemos criar uma pasta chamada SRC, dentro dela criamos 3 arquivos chamados, app.js, server.js e routes.js.
+- yarn add express para podermos fazer o servidor ajustável, agora podemos criar uma pasta chamada SRC, dentro dela criamos 3 arquivos chamados, app.js, server.js e routes.js.
 
-No qual o _APP_ ficara a configuração de parametros a serem utilizados.
+No qual o _APP_ ficara a configuração de paramêtros a serem utilizados.
 
-No _server_ iremos importar APP colocar a porta que será escurada.
+No _server_ iremos importar APP colocar a porta que será escutada.
 
-No _routes_ é onde ficaram as rotas de requisição para operações.
+No _routes_ é onde ficarão as rotas de requisição para operações.
 
-- yarn add nodemon utilizamos para dar um refreshin automatico no servidor quando ele estiver em pé. E ainda podemos utilizar o sucrase que faz praticamente a mesma coisa só que de uma maneira otimizada.
+- yarn add nodemon utilizamos para dar um refresh automático no servidor quando ele estiver em pé. E ainda podemos utilizar o sucrase que faz praticamente a mesma coisa só que de uma maneira otimizada.
 
 ## Banco de dados
 
-yarn add pg pg-hstore
-yarn add sequelize
-yarn add sequelize-cli -D
-create: sequelizerc
+- Para podermos trabalhar com o BD POSTGRES, precisamos instalar acima, após isso faremos algumas configurações.
+```bash
+yarn add pg pg-hstore sequelize 
+yarn sequelize-cli -D
+```
+- Crie um arquivo na raiz do projeto chamado: sequelizerc
 
-Para podermos trablhar com o BD POSTGRES, precisamos instalar acima, após isso fazermos algumas configurações.
-
-- Na raiz do projeto temos que criar uma aquivo chamado sequelizerc, pois neste arquivo irá ficar todos os path que a CLI irá utilizar.
-
-- Devemos codar os arquivos de configurações de de conneção e configuração e suas models.
+- Devemos codar os arquivos de configurações, coneção, config e suas models.
 
 ## Ideia
 
